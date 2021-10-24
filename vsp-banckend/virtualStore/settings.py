@@ -26,7 +26,7 @@ SECRET_KEY = ''
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['vsp-backend.herokuapp.com', 'localhost']
 
 CORS_ALLOW_ALL_ORIGINS = True
 
@@ -103,7 +103,7 @@ WSGI_APPLICATION = 'virtualStore.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': '',
         'NAME': '',
         'USER': '',
         'PASSWORD': '',
