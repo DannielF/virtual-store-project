@@ -106,7 +106,7 @@ body {
 }
 .order p span:nth-child(2) {
   font-size: var(--sm);
-  color: var(--very-light-pink);
+  color: var(--hospital-green);
 }
 .order p:nth-child(2) {
   text-align: end;
@@ -129,7 +129,7 @@ body {
   object-fit: cover;
 }
 .shopping-cart p:nth-child(2) {
-  color: var(--very-light-pink);
+  color: var(--hospital-green);
 }
 .shopping-cart p:nth-child(3) {
   font-size: var(--md);

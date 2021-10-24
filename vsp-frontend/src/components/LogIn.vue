@@ -27,10 +27,11 @@
           value="Log in"
           class="primary-button login-button"
         />
-        <a href="/">Forgot my password</a>
       </form>
 
-      <button class="secondary-button signup-button">Sign up</button>
+      <button class="secondary-button signup-button" v-on:click="loadSignUp">
+        Sign up
+      </button>
     </div>
     <p id="customAlert" class="customAlert"></p>
   </div>
@@ -71,6 +72,9 @@ export default {
             customAlert.innerText = 'Error 401: Credenciales incorrectas';
           }
         });
+    },
+    loadSignUp() {
+      this.$router.push({ name: 'signUp' });
     },
   },
 };

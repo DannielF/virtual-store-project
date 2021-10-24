@@ -180,7 +180,7 @@ export default {};
   font-size: var(--sm);
   margin-top: 0;
   margin-bottom: 0;
-  color: var(--very-light-pink);
+  color: var(--hospital-green);
 }
 @media (max-width: 640px) {
   .cards-container {

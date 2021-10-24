@@ -8,7 +8,10 @@
         <button v-if="!is_auth" v-on:click="loadSignUp">SignUp</button>
         <button v-if="is_auth" v-on:click="loadMyOrder">MyOrder</button>
         <button v-if="is_auth" v-on:click="loadProductPage">Products</button>
-        <button v-if="is_auth" v-on:click="logOut">LogOut</button>
+        <button v-if="is_auth" v-on:click="loadUserSettings">
+          Configuración
+        </button>
+        <button v-if="is_auth" v-on:click="logOut">Cerrar sesión</button>
       </nav>
     </div>
     <div class="main-component">
@@ -74,6 +77,10 @@ export default {
 
     loadProductPage() {
       this.$router.push({ name: 'productPage' });
+    },
+
+    loadUserSettings() {
+      this.$router.push({ name: 'userSettings' });
     },
 
     logOut() {

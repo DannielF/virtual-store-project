@@ -23,12 +23,12 @@
             v-model="user.name"
           />
 
-          <label for="lastname" class="label">LastName</label>
+          <label for="lastname" class="label">Lastname</label>
           <input
             type="text"
             id="lastname"
-            placeholder="Lastname"
-            class="input input-name"
+            placeholder="Your lastname"
+            class="input input-lastname"
             v-model="user.lastname"
           />
 
@@ -128,7 +128,7 @@ body {
 .form-container {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  width: 300px;
+  width: 330px;
 }
 .logo {
   width: 150px;
@@ -164,6 +164,7 @@ body {
   margin-bottom: 12px;
 }
 .input-name,
+.input-lastname,
 .input-email,
 .input-password {
   margin-bottom: 22px;
